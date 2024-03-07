@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="Npvtppm379ORh2koZeollAYJgjvsS2I8N6xZZnGZ8FU" />
 
     <title>エラー - Zero Quake</title>
 
@@ -28,7 +27,7 @@
 <body>
     <header>
         <div id="header_content">
-            <img src="/image/logo.svg" alt="Zero Quake ロゴ">
+            <img src="https://0quake.github.io/ZeroQuake_Website/image/logo.svg" alt="Zero Quake ロゴ">
             <div id="title-wrap">
                 <h1>Zero Quake</h1>
                 <p>地震の被害ゼロをめざして—</p>
@@ -57,16 +56,8 @@
         </div>
 
         <p>本ページ中の画像等はリアルタイムの情報ではありません。</p>
-        <small>&copy; 2023 benidate</small>
+        <small>&copy; 2023-2024 benidate</small>
     </footer>
-    <script>
-        fetch("https://api.github.com/repos/0Quake/Zero-Quake/releases")
-            .then(function (res) {
-                return res.json()
-            }).then(function (json) {
-                document.getElementById("download_version").innerText = json[0].tag_name
-            })
-    </script>
 
 </body>
 

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="Npvtppm379ORh2koZeollAYJgjvsS2I8N6xZZnGZ8FU" />
 
     <title>Zero Quake - ダウンロード完了</title>
 
@@ -79,18 +78,9 @@
         </div>
 
         <p>本ページ中の画像等はリアルタイムの情報ではありません。</p>
-        <small>&copy; 2023 benidate</small>
+        <small>&copy; 2023-2024 benidate</small>
     </footer>
-    <script>
-        fetch("https://api.github.com/repos/0Quake/Zero-Quake/releases")
-            .then(function (res) {
-                return res.json()
-            }).then(function (json) {
-                var dlURL = json[0].assets[0].browser_download_url
-                document.getElementById("manual_download_link").setAttribute("href", dlURL)
-                location.href = dlURL
-            })
-    </script>
+
 
 </body>
 
