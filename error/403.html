@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Npvtppm379ORh2koZeollAYJgjvsS2I8N6xZZnGZ8FU" />
+
+    <title>エラー - Zero Quake</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <meta name="description" content="地震情報 通知アプリ「Zero Quake」に関連する連絡先の案内ページです。">
+    <meta name="author" content="Zero Quake">
+    <meta name="designer" content="Zero Quake">
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="no-referrer">
+    <meta name="copyright" content="© 2023 benidate">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <link rel="icon" type="image/x-icon" href="https://zeroquake.wwww.jp/favicon.ico">
+    <meta name="theme-color" content="#220000">
+    <link rel="icon" type="image/svg+xml" href="https://zeroquake.wwww.jp/image/icon.svg">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0P2BV2NL02"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0P2BV2NL02');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="header_content">
+            <img src="/image/logo.svg" alt="Zero Quake ロゴ">
+            <div id="title-wrap">
+                <h1>Zero Quake</h1>
+                <p>地震の被害ゼロをめざして—</p>
+            </div>
+        </div>
+        <div id="copyright">[画像] 地図：気象庁 データ：防災科学技術研究所</div>
+    </header>
+    <nav>
+        <a href="/">トップページ</a>
+        <a href="/download.html">ダウンロード</a>
+        <a href="/contact.html">お問い合わせ</a>
+    </nav>
+    <main>
+        <div id="page-title">エラー<br>403 Forbidden</div>
+
+        <p>このページへのアクセス権限がありません </p>
+        <a href="https://zeroquake.wwww.jp/">トップページ</a>
+
+
+    </main>
+    <footer>
+        <div id="SNS_Link">
+            <a id="Twitter_link" href="https://twitter.com/Zero_Quake" title="Zero Quake Twitterアカウント"></a>
+            <a id="YouTube_link" href="https://www.youtube.com/@ZeroQuake" title="Zero Quake YouTubeアカウント"></a>
+        </div>
+
+        <p>本ページ中の画像等はリアルタイムの情報ではありません。</p>
+        <small>&copy; 2023 benidate</small>
+    </footer>
+    <script>
+        fetch("https://api.github.com/repos/0Quake/Zero-Quake/releases")
+            .then(function (res) {
+                return res.json()
+            }).then(function (json) {
+                document.getElementById("download_version").innerText = json[0].tag_name
+            })
+    </script>
+
+</body>
+
+</html>

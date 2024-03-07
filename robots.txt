@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /error/
+Disallow: /crashReport/
+Disallow: /download_success.html
