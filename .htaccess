@@ -75,12 +75,6 @@ order deny,allow
 
 AddType image/xicon .ico
 
-ErrorDocument 401 https://0quake.github.io/ZeroQuake_Website/error/401.html
-ErrorDocument 403 https://0quake.github.io/ZeroQuake_Website/error/403.html
-ErrorDocument 404 https://0quake.github.io/ZeroQuake_Website/error/404.html
-ErrorDocument 500 https://0quake.github.io/ZeroQuake_Website/error/500.html
-ErrorDocument 503 https://0quake.github.io/ZeroQuake_Website/error/503.html
-
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Strict-Transport-Security "max-age=31557600; includeSubDomains; preload" env=HTTPS
 Header always set Access-Control-Allow-Origin \_
