@@ -66,9 +66,6 @@ RewriteRule ^(.\_)index.html$ https://0quake.github.io/ZeroQuake_Website/$1 [R=3
 RewriteCond %{THE*REQUEST} ^.*/index.php
 RewriteRule ^(.\_)index.php$ https://0quake.github.io/ZeroQuake_Website/$1 [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^zeroquake.wwww\.jp
-RewriteRule ^(.\*)$ https://0quake.github.io/ZeroQuake_Website/$1 [R=301,L]
-
 RewriteCond %{REQUEST_URI} !/$
 RewriteCond %{REQUEST_URI} !\.[^/\.]+$
 RewriteRule .\* %{REQUEST_URI}/ [R=301,L]
